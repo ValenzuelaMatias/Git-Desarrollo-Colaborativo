@@ -1,0 +1,10 @@
+#CAPERTAS
+temp/
+tmp/
+docs/
+
+#Archivos
+*.temp 
+*.tmp 
+*.swp
+*.txt
