@@ -8,5 +8,57 @@
 </head>
 <body>
     <h1>Git Desarrollo colaborativo</h1>
+    <article>
+        <h2>Staging area (INDEX)</h2>
+        <p>
+            El area de control de cambios es donde controlamos los archivos donde vamos a estar haciendo
+            seguimientom, cada vez que agregamos elementos al index se le hace un snapshot al codigo que luego 
+            debera ser confirmada para determinar su permanencia en el historial de cambios 
+        </p>
+        <ul>
+            <li><strong>Git status</strong> muestra el estado de los archiso del 
+            Woking Directory con respecto al INDEX, dentro de los estados mas 
+            comunes estan:
+            <ul>
+                <li><strong>untracked</strong>No se esta siguiendo el archivo, en
+                case de borrarse los cambios son irrecuperables</li>
+                <li><strong>staged:</strong>se realizo la captura del codigo,
+                pero todavia no se confirmaron los cambios</li>
+                <li><strong>commited:</strong>los cambios realizados en el archivo 
+                se encuentran almacenados en el historial</li>
+                <li><strong>modified:</strong>el archivo se difiere con respecto a 
+                lo registrado en el INDEX o la ultima confirmacion</li>
+            </ul>
+            </li>
+            <li><strong>Git add </strong>Agrega al INDEX el conjunto de archivos seleccionados</li>
+            <li><strong>git diff</strong>Compra los archivos del working directory con lo que se 
+            regitra en el INDEX </li>
+            <li><strong>git restore --staged</strong>Elimina la ultima 
+            captura del INDEX, no modifica el archivo </li>
+            <li><strong>git rm --cached</strong>elimina el archivo del 
+            INDEX , no se realiza mas seguimiento</li>
+        </ul>
+    </article>
+    <article>
+        <h3>Repository (LOCAL/REMOTE)</h3>
+        <p>
+            Es el area donde se almacenan todas las confirmaciones de cambios en 
+            archivos de tipo BLOB distribuidos en una estrctura de carpeta identificadas 
+            de maneras hexadecimal, que van desde el 99 al ff. Esto nos permite crear puntos
+            de control  a los que podemos volver en cualquier momento.
+        </p>
+        <ul class="commands">
+            <li><strong>git commit:</strong>abre el editor predeterminado para realizar 
+            la confirmacion de cambios </li>
+            <li><strong>git log:</strong>Muestra el historial de cambios ordenados de manera 
+            descendente </li>
+            <li><strong>git blame</strong>muestra los autores y confirmaciones 
+            de cada linea en un archivo</li>
+            <li><strong>git push </strong>agrega los cambios de la rama 
+            al respositorio remoto </li>
+            <li><strong>git fetch </strong> captura el historual de cambios de nuestro respositorio
+            remoto </li>
+        </ul>
+    </article>
 </body>
 </html>
