@@ -1,0 +1,9 @@
+/*Conten Fitst - Mobile First*/
+    /*Reglas Generales*/
+    *{
+        box-sizing: border-box;
+        font-family: "segoe ui","calibri","sans-seriff";
+    }
+    body,h1,h2,h3,header p{
+        margin:0;
+    }
